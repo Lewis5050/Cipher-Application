@@ -1,0 +1,31 @@
+﻿<Page x:Class="Cryptex.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cryptex"
+      mc:Ignorable="d" 
+      d:DesignHeight="354" d:DesignWidth="500"
+      Title="Home">
+
+    <Grid>
+        <StackPanel>
+            
+            <!-- Cryptex Logo -->
+            <Label HorizontalAlignment="Center" Content="Cryptex" Foreground="#FF86C232" FontFamily="Global User Interface" FontSize="36" Margin="0 40 0 20"></Label>
+            
+            <!-- Text -->
+            <TextBlock Padding="30 0 30 0" HorizontalAlignment="Center" TextWrapping="WrapWithOverflow" Height="75" 
+                       Text="Welcome to Cryptex, a piece of sofware that allows you to encrypt text via several implemented ciphers, all of which you can see in the panel to the left. Most of the ciphers used will only be able to encrypt the standard alphabet (e.g A-Z), and punctuation and numbers will be removed during the encryption process." Foreground="#FF838789" FontSize="11" FontFamily="Global User Interface" TextAlignment="Center">
+            </TextBlock>
+            <TextBlock Padding="30 0 30 0" HorizontalAlignment="Center" TextWrapping="WrapWithOverflow" Height="45" 
+                       Text="Some of the ciphers implemented include: the Bifid cipher, the Beaufort cipher, the Porta cipher, as well as the Straddle Checkerboard cipher" Foreground="#FF838789" FontSize="11" FontFamily="Global User Interface" TextAlignment="Center">
+            </TextBlock>
+            
+            <!-- Start Now Button-->
+            <Button Margin= "0 15 0 0" Height="30" Width="100" Content="Start Now" Background="#86C232" Foreground="#222629" FontFamily="Global User Interface" FontSize="13" BorderThickness="0" Click="startNowButton_Click"></Button>
+            
+        </StackPanel>
+        
+    </Grid>
+</Page>

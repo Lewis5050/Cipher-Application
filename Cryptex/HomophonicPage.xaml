@@ -1,0 +1,106 @@
+﻿<Page x:Class="Cryptex.HomophonicPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cryptex"
+      mc:Ignorable="d" 
+      d:DesignHeight="354" d:DesignWidth="500"
+      Title="HomophonicPage">
+
+    <Grid>
+        <StackPanel>
+
+            <!-- Homophonic Subsitution Cipher Label + Paragraph -->
+            <Label  Margin="20 20 0 20" FontFamily="Global User Interface" Foreground="#FF86C232" FontSize="18" Content="Homophonic Substitution Cipher" />
+            <TextBlock Padding="20 0 20 0" Foreground="#FF838789" TextWrapping="WrapWithOverflow" Text="The Homophonic Substitution cipher is a substitution cipher in which single plaintext letters can be replaced by any of several different ciphertext letters. They are generally much more difficult to break than standard substitution ciphers."/>
+
+            <!-- Letter Row -->
+            <Label Margin="20 10 0 5" HorizontalAlignment="Left"  Foreground="#61892F" Content="A   B   C   D   E   F   G   H   I   J   K   L   M   N   O   P   Q   R   S   T   U   V   W   X   Y   Z" FontFamily="Global User Interface"/>
+
+            <!-- Row 1 Subsitutions -->
+            <StackPanel x:Name="row1" Orientation="Horizontal" Margin="0 0 0 10">
+                <TextBox Margin="17 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+            </StackPanel>
+
+            <!-- Row 2 Subsitutions -->
+            <StackPanel x:Name="row2" Orientation="Horizontal">
+                <TextBox Margin="17 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+                <TextBox Margin="2.5 0 0 0" Height="15" Width="15"/>
+            </StackPanel>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Input section -->
+                <StackPanel Grid.Column="0">
+                    <Label Margin="20 10 0 0" Content="Input to Encrypt:" Foreground="#61892F"/>
+                    <TextBox x:Name="plainTextInputTextBox" Margin="20 0 0 0 " HorizontalAlignment="Left" Height="85" Width="210"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="setSubstitutionsButton" Margin="20 5 0 0" HorizontalAlignment="Left" Width="100" Height="20" Content="Set Substitutions" Click="setSubstitutionsButton_Click" FontFamily="Global User Interface" Background="#FF86C232" BorderThickness="0" Foreground="#FF222629"/>
+                        <Button x:Name="encryptButton" Margin="10 5 0 0" HorizontalAlignment="Left" Width="70" Height="20" Content="Encrypt" Click="encryptButton_Click" FontFamily="Global User Interface" Background="#FF86C232" BorderThickness="0" Foreground="#FF222629"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <!-- Output section -->
+                <StackPanel Grid.Column="1">
+                    <Label Margin="20 10 0 0" Content="Output:" Foreground="#61892F"/>
+                    <TextBox x:Name="outputTextBox" Margin="20 0 0 0 " HorizontalAlignment="Left" Height="85" Width="210"/>
+                </StackPanel>
+                
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>

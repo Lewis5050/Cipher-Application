@@ -1,0 +1,116 @@
+﻿<Page x:Class="Cryptex.BifidPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Cryptex"
+      mc:Ignorable="d" 
+      d:DesignHeight="354" d:DesignWidth="500"
+      Title="BifidPage">
+
+    <Grid>
+        <StackPanel>
+
+            <!-- Bifid Cipher Label + Paragraph -->
+            <Label  Margin="20 20 0 5" FontFamily="Global User Interface" Foreground="#FF86C232" FontSize="18" Content="Bifid Cipher" />
+            <TextBlock Padding="25 0 20 10" Foreground="#FF838789" TextWrapping="WrapWithOverflow" Text="The Bifid cipher was invented around 1901 by a man named Felix Delastelle, which combines the Polybius square with transposition, and uses fractionation to achieve diffusion. "/>
+
+            <!-- Input and Output -->
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.7*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Chacaracter Grid for Encryption -->
+                <StackPanel Grid.Column="0" Margin="0 0 0 0">
+
+                    <Label Margin="14 0 0 0" Content="Character Grid:" FontFamily="Global User Interface" Foreground="#61892F"/>
+
+                    <!-- Row 1 -->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="Row1TextBox1" Margin="20, 5, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row1TextBox2" Margin="5, 5, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row1TextBox3" Margin="5, 5, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row1TextBox4" Margin="5, 5, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row1TextBox5" Margin="5, 5, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                    </StackPanel>
+
+                    <!-- Row 2 -->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="Row2TextBox1" Margin="20, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row2TextBox2" Margin="5, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row2TextBox3" Margin="5, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row2TextBox4" Margin="5, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row2TextBox5" Margin="5, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                    </StackPanel>
+
+                    <!-- Row 3 -->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="Row3TextBox1" Margin="20, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row3TextBox2" Margin="5, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row3TextBox3" Margin="5, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row3TextBox4" Margin="5, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row3TextBox5" Margin="5, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                    </StackPanel>
+
+                    <!-- Row 4 -->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="Row4TextBox1" Margin="20, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row4TextBox2" Margin="5, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row4TextBox3" Margin="5, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row4TextBox4" Margin="5, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row4TextBox5" Margin="5, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                    </StackPanel>
+
+                    <!-- Row 5 -->
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="Row5TextBox1" Margin="20, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row5TextBox2" Margin="5, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row5TextBox3" Margin="5, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row5TextBox4" Margin="5, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                        <TextBox x:Name="Row5TextBox5" Margin="5, 10, 10, 0" Width="20" Height="20" FontFamily="Global User Interface" TextAlignment="Center" MaxLength="1"/>
+                    </StackPanel>
+
+                    <!-- Spacing -->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <!-- Spacing Input -->
+                        <StackPanel Grid.Column="0" Margin="14 5 0 0">
+                            <Label Content="Spacing" Foreground="#FF61892F" FontFamily="Global User Interface"/>
+                            <TextBox x:Name="SpacingInputTextBox" Margin="12, 0 0 0" Width="30" Height="20" HorizontalAlignment="Left" MaxLength="1" FontFamily="Global User Interface" TextAlignment="Center"/>
+                        </StackPanel>
+
+                        <!-- Character Grid Populate Buttons-->
+                        <StackPanel Grid.Column="1">
+                            <Button x:Name="AutoPopulateButton" Margin="10, 15, 5, 0" HorizontalAlignment="Left" Width="100" Height="15" Content="Auto-Populate" Background="#FF86C232" Foreground="#FF222629" FontFamily="Global User Interface" BorderThickness="0" FontSize="11" Click="AutoPopulateButton_Click"/>
+                            <Button x:Name="ManualPopulateButton" Margin="10, 5, 5, 0"  HorizontalAlignment="Left" Width="100" Height="15" Content="Manual-Populate" Background="#FF86C232" Foreground="#FF222629" FontFamily="Global User Interface" BorderThickness="0" FontSize="11" Click="ManualPopulateButton_Click"/>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+
+                <!-- Plaintext/Encrypted Text Input -->
+                <StackPanel Grid.Column="1">
+                    <Label Margin="0 0 0 0" Content="Text to Encrypt/Decrypt:" FontFamily="Global User Interface" Foreground="#61892F"/>
+                    <TextBox x:Name="PlainTextInputTextBox" Margin="8 2 20 0" Height="70" TextWrapping="Wrap"/>
+                    
+                    <!-- Encrypt/Decrypt Buttons-->
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="EncryptButton" Margin="8, 5, 5, 0" Width="60" Height="20" Content="Encrypt" Background="#FF86C232" Foreground="#FF222629" FontFamily="Global User Interface" BorderThickness="0" Click="EncryptButton_Click"/>
+                        <Button x:Name="DecryptButton" Margin="0, 5, 7, 0" Width="60" Height="20" Content="Decrypt" Background="#FF86C232" Foreground="#FF222629" FontFamily="Global User Interface" BorderThickness="0" Click="DecryptButton_Click"/>
+                    </StackPanel>
+                    
+                    <!-- Output TextBox -->
+                    <Label Margin="0 10 0 0" Content="Output:" FontFamily="Global User Interface" Foreground="#61892F"/>
+                    <TextBox x:Name="OutputTextBox" Margin="8 2 20 0" Height="70" TextWrapping="Wrap"/>
+                </StackPanel>
+
+            </Grid>
+        </StackPanel>
+
+    </Grid>
+</Page>
